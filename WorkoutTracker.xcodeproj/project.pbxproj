@@ -12,6 +12,8 @@
 		EE49D8EF21593A0300B13EBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE49D8ED21593A0300B13EBB /* Main.storyboard */; };
 		EE49D8F121593A0800B13EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE49D8F021593A0800B13EBB /* Assets.xcassets */; };
 		EE49D8F421593A0800B13EBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE49D8F221593A0800B13EBB /* LaunchScreen.storyboard */; };
+		EE49D8FD21593F4B00B13EBB /* WorkoutTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49D8FC21593F4B00B13EBB /* WorkoutTrackerModel.swift */; };
+		EE5D5C1A2159486F00FE21ED /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D5C192159486F00FE21ED /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EE49D8F021593A0800B13EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE49D8F321593A0800B13EBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE49D8F521593A0800B13EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE49D8FC21593F4B00B13EBB /* WorkoutTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTrackerModel.swift; sourceTree = "<group>"; };
+		EE5D5C192159486F00FE21ED /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		EE49D8DD21593A0200B13EBB = {
 			isa = PBXGroup;
 			children = (
+				EE49D8FB21593CC300B13EBB /* SupportingFiles */,
 				EE49D8E821593A0200B13EBB /* WorkoutTracker */,
 				EE49D8E721593A0200B13EBB /* Products */,
 			);
@@ -54,14 +59,23 @@
 		EE49D8E821593A0200B13EBB /* WorkoutTracker */ = {
 			isa = PBXGroup;
 			children = (
-				EE49D8E921593A0200B13EBB /* AppDelegate.swift */,
 				EE49D8EB21593A0200B13EBB /* ViewController.swift */,
 				EE49D8ED21593A0300B13EBB /* Main.storyboard */,
-				EE49D8F021593A0800B13EBB /* Assets.xcassets */,
-				EE49D8F221593A0800B13EBB /* LaunchScreen.storyboard */,
 				EE49D8F521593A0800B13EBB /* Info.plist */,
+				EE49D8FC21593F4B00B13EBB /* WorkoutTrackerModel.swift */,
+				EE5D5C192159486F00FE21ED /* Exercise.swift */,
 			);
 			path = WorkoutTracker;
+			sourceTree = "<group>";
+		};
+		EE49D8FB21593CC300B13EBB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EE49D8E921593A0200B13EBB /* AppDelegate.swift */,
+				EE49D8F021593A0800B13EBB /* Assets.xcassets */,
+				EE49D8F221593A0800B13EBB /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE49D8FD21593F4B00B13EBB /* WorkoutTrackerModel.swift in Sources */,
+				EE5D5C1A2159486F00FE21ED /* Exercise.swift in Sources */,
 				EE49D8EC21593A0200B13EBB /* ViewController.swift in Sources */,
 				EE49D8EA21593A0200B13EBB /* AppDelegate.swift in Sources */,
 			);
@@ -292,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.hollyhudson.WorkoutTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.hollyhudson.WorkoutTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
